@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const categorySidebar = () => {
+const CategorySidebar = () => {
   const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
   const params = usePathname();
@@ -58,4 +58,4 @@ const categorySidebar = () => {
   );
 };
 
-export default categorySidebar;
+export default CategorySidebar;
